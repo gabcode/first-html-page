@@ -1,0 +1,269 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    background-color: #333333;
+    color:#ffffff;
+}
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url('Pacifico-Regular.eot');
+  src: local('Pacifico-Regular'), url('Pacifico-Regular.ttf') format('truetype');
+}
+nav{
+  background-color: #000;
+  height: 54px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul{
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+nav ul ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+nav ul li{
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+nav ul li:hover ul{
+  display: block;
+}
+nav ul li li{
+  position: relative;
+  float: none;
+  width: 100%;
+  border: none;
+  color: #000;
+  background: #ffffff;
+  transition: 0.3s;
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 25px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+nav ul ul li a{
+  font-size: 13px;
+}
+nav ul li:hover a{
+  background: #ffffff;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav ul li li:hover a{
+  background: #000;
+  color: #ffffff;
+}
+nav ul li li:hover{
+  background: #000;
+  color: #ffffff;
+  transition: 0.3s;
+}
+header{
+  font-family: Pacifico-Regular;
+  font-size: 50px;
+  text-shadow: 15px 15px 10px #000;
+  text-align: center;
+}
+#zen-subtitles{
+  text-align: center;
+  font-size: 14px;
+}
+section a{
+  text-decoration: none;
+  color: #03a8f4;
+}
+section a:hover{
+  text-decoration: underline;
+}
+section a:visited{
+  color: #03a8f4;
+}
+div.summary{
+  font-size: 16px;
+  text-align: center;
+  background-image: url(css_banner_img.jpg);
+  min-height: 600px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+}
+h3{
+  font-size: 25px;
+}
+div.preamble{
+  float: left;
+  margin-left: 5%;
+  width: 35%;
+  background-color: #505050;
+  border: double;
+  position: absolute;
+  top: 550px;
+  padding: 5px;
+}
+div.explanation{
+  text-align: center;
+  float: right;
+  width: 35%;
+  background-color: #505050;
+  border: double;
+  position: absolute;
+  top: 770px;
+  right: 5%;
+  padding: 5px;
+}
+.participation{
+  background-color: #fff;
+  width:400px; height: 550px;
+  perspective: 2000px;
+  cursor:pointer;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);/*occhio*/
+  text-align: center;
+  text
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.participation-cover, .participation-contenutes{
+  position: absolute;
+  width: 100%; height: 100%;
+  left: 20px;
+  transition: all 0.7s;
+}
+.participation-title, .participation-background{
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%; height: 100%;
+}
+.participation-cover{
+  transform-origin: left;
+  transform-style: preserve-3d;
+}
+.participation-background{
+  background-color: #fff;
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+.participation-title img{
+  width: 100%;
+  height: 100%;
+}
+.participation-contenutes{
+  z-index: -1;
+  background-color: #505050;
+  border: solid #fff 1px;
+}
+.participation:hover .participation-cover{
+  transform: rotateY(-130deg);
+}
+.participation-title{
+  background-color: #000;
+  border: solid #000 1px;
+}
+.participation-title h3{
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  font-size: 60px;
+}
+.benefits-background{
+  background-image: url(benefits.jpg);
+  min-width: 1000px;
+  min-height: 450px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.benefits{
+  position: relative;
+  left: 830px;
+  top: 220px;
+  margin-top: 70px;
+  padding-left: 5px;
+  width: 410px;
+  background-color: #34445b;
+  font-size: 20px;
+}
+.benefits h3{
+  font-size: 0px;
+}
+.requirements{
+  padding: 15px;
+}
+.requirements h3{
+  text-align: center;
+  font-size: 35px;
+}
+.requirements p{
+  text-align: justify;
+}
+.c1{
+  float: left;
+  width: 550px;
+  margin-left: 100px;
+}
+.c2{
+  float: right;
+  width: 550px;
+  margin-right: 100px;
+}
+[role=main]{
+  font-size: 16px;
+}
+[role=main] a{
+  text-decoration: none;
+  color: #03a8f4;
+}
+[role=main] a:hover{
+  text-decoration: underline;
+}
+[role=main] a:visited{
+  color: #03a8f4;
+  text-decoration: none;
+}
+footer{
+  float: left;
+  width: 100%;
+}
+footer a{
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding-top: 12px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  height: 25px;
+  margin-top: 20px;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+footer a:visited{
+  color: #fff;
+  text-decoration: none;
+}
